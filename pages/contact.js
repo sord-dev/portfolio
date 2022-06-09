@@ -3,7 +3,9 @@ import styles from "../styles/Contact.module.css";
 
 function contact() {
   return (
-    <div className={styles.main}>contact</div>
+    <div className={styles.main}>
+    contact
+    </div>
   )
 }
 
