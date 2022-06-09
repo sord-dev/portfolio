@@ -108,9 +108,27 @@
   margin-left: 0.5rem;
 }
 
+.nav {
+  padding: 1em;
+}
+
+.nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+
+  .nav ul{
+    justify-content: center;
+    gap: 1.5em;
+  }
 }
+
