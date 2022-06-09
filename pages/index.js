@@ -2,6 +2,7 @@ import { Box, Heading, Link, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion"
+import ParticleBackground from "./components/ParticleBackground";
 
 export default function Home() {
   return (
@@ -13,9 +14,11 @@ export default function Home() {
           content="Portfolio of sord-dev, otherwise known as Stefan"
         />
       </Head>
+      <ParticleBackground />
 
       <Box className={styles.main}>
         <Heading as={motion.span}
+        className={styles.title}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}>
           Hey, the name&apos;s{" "}
@@ -24,7 +27,14 @@ export default function Home() {
           </Link>
         </Heading>
 
-        <Text mt={2} textAlign='left'>I&apos;m a react developer from London, UK</Text>
+        <Text
+        className={styles.description}
+        as={motion.p}
+        mt={20} 
+        initial={{opacity: 0, y: 200 }}
+        animate={{y: -50, opacity: 1}}
+        fontSize='16'
+        >I&apos;m a React developer from London, UK</Text>
       </Box>
     </div>
   );
