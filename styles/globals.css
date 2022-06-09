@@ -14,3 +14,37 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.nav {
+  padding: 1em;
+}
+
+.nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+
+.btt{
+  display: none;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+
+  width: 90px;
+  height: 90px;
+  border-radius: 15%;
+}
+
+@media (max-width: 600px) {
+  .nav ul{
+    justify-content: center;
+    gap: 1.5em;
+  }
+
+  .btt {
+    display: block;
+  }
+}
