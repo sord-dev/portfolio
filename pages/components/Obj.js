@@ -1,10 +1,12 @@
-import { Text } from '@chakra-ui/react'
 import React from 'react'
 
 
 function Obj() {
   return (
-      <Text>boo</Text>
+      <mesh rotation={[90, 0, 20]}>
+        <boxBufferGeometry attach='geometry' args={[3, 3, 3]}/>
+        <meshLambertMaterial attach='meterial' color='blue'/>
+      </mesh>
   )
 }
 

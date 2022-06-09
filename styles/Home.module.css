@@ -85,4 +85,6 @@
   line-height: 1.5;
 }
 
-
+.canvas canvas{
+  height: 500px;
+}
