@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Obj from "./components/Obj";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import AnimatedSphere from "./components/AnimatedSphere";
 
 export default function Home() {
   return (
@@ -43,11 +44,13 @@ export default function Home() {
         </Text>
 
         <Canvas className={styles.canvas}>
-          <OrbitControls />
+          <OrbitControls enableZoom={false}/>
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} intensity={2} />
-          <Obj />
+          <AnimatedSphere />
         </Canvas>
+
+
       </Box>
     </div>
   );
