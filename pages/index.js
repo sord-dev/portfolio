@@ -1,6 +1,7 @@
 import { Box, Heading, Link } from "@chakra-ui/react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
       </Head>
 
       <Box className={styles.main}>
-        <Heading>
+        <Heading as={motion.span}
+         whileHover={{ scale: 1.1 }}
+         whileTap={{ scale: 0.9 }}>
           Hey, the name&apos;s{" "}
           <Link color="teal.500" href="https://github.com/sord-dev">
             Sord-dev
