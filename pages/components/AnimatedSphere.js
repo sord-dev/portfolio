@@ -9,6 +9,7 @@ function AnimatedSphere() {
             attach='material'
             distort={.5}
             speed={2}
+            roughness={6}
         />
     </Sphere>
   )

@@ -2,7 +2,6 @@ import { Box, Heading, Link, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
-import Obj from "./components/Obj";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import AnimatedSphere from "./components/AnimatedSphere";
