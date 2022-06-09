@@ -1,25 +1,32 @@
-import { Link } from '@chakra-ui/react'
-import React from 'react'
+import { AtSignIcon, PhoneIcon, QuestionOutlineIcon, SunIcon, ViewIcon } from "@chakra-ui/icons";
+import { Link, IconButton, useColorMode } from "@chakra-ui/react";
+import React from "react";
+
 
 function Navbar() {
+    const { toggleColorMode } = useColorMode();
   return (
     <nav className="nav">
-    <ul>
-      <li>
-        <Link href="/">home</Link>
-      </li>
-      <li>
-        <Link href="/about">about me</Link>
-      </li>
-      <li>
-        <Link href="/projects">projects</Link>
-      </li>
-      <li>
-        <Link href="/contact">contact</Link>
-      </li>
-    </ul>
-  </nav>
-  )
+      <ul>
+        <li>
+        <Link href="/" ><IconButton icon={<AtSignIcon/>} / ></Link>
+        </li>
+        <li>
+        <Link href="/about" ><IconButton icon={<QuestionOutlineIcon/>} / ></Link>
+        </li>
+        <li>
+        <Link href="/projects" ><IconButton icon={<ViewIcon/>} / ></Link>
+        </li>
+        <li>
+          <Link href="/contact" ><IconButton icon={<PhoneIcon/>} / ></Link>
+        </li>
+
+        <li>
+          <IconButton onClick={toggleColorMode} icon={<SunIcon/>}></IconButton>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

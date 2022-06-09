@@ -13,7 +13,6 @@ export default function Home() {
         />
       </Head>
 
-
       <Box className={styles.main}>
         <Heading>
           Hey, the name&apos;s{" "}
