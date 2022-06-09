@@ -49,6 +49,12 @@ a {
   border-radius: 15%;
 }
 
+.footer{
+  padding: 1em;
+  font-size: small;
+  opacity: .8;
+}
+
 @media (max-width: 600px) {
   .nav ul{
     justify-content: center;

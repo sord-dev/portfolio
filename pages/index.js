@@ -19,7 +19,7 @@ export default function Home() {
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}>
           Hey, the name&apos;s{" "}
-          <Link color="teal.500" href="https://github.com/sord-dev">
+          <Link color="purple.400" href="https://github.com/sord-dev">
             Sord-dev
           </Link>
         </Heading>
