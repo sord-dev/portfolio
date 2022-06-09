@@ -34,7 +34,11 @@ a {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  gap: 1em;
+  gap: 1.175em;
+}
+
+.nav ul li:last-child{
+  margin-left: 20px;
 }
 
 
@@ -62,6 +66,13 @@ a {
   .nav ul{
     justify-content: center;
     gap: 1.5em;
+  }
+
+  .nav ul li:last-child{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: .6;
   }
 
   .btt {

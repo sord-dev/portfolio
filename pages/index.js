@@ -1,4 +1,4 @@
-import { Box, Heading, Link } from "@chakra-ui/react";
+import { Box, Heading, Link, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion"
@@ -23,6 +23,8 @@ export default function Home() {
             Sord-dev
           </Link>
         </Heading>
+
+        <Text mt={2} textAlign='left'>I&apos;m a react developer from London, UK</Text>
       </Box>
     </div>
   );
