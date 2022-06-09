@@ -62,6 +62,10 @@ a {
   opacity: .8;
 }
 
+.not-found{
+  display: flex;
+}
+
 @media (max-width: 600px) {
   .nav ul{
     justify-content: center;
