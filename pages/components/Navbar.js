@@ -1,5 +1,6 @@
 import {
   AtSignIcon,
+  MoonIcon,
   PhoneIcon,
   QuestionOutlineIcon,
   SunIcon,
@@ -9,7 +10,8 @@ import { Link, IconButton, useColorMode, Tooltip } from "@chakra-ui/react";
 import React from "react";
 
 function Navbar() {
-  const { toggleColorMode } = useColorMode();
+  const { colorMode,toggleColorMode } = useColorMode();
+
   return (
     <nav className="nav">
       <ul>
@@ -43,7 +45,7 @@ function Navbar() {
         </li>
 
         <li>
-          <IconButton onClick={toggleColorMode} icon={<SunIcon />}></IconButton>
+          <IconButton onClick={toggleColorMode} icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon /> }></IconButton>
         </li>
       </ul>
     </nav>
