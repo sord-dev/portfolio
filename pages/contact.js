@@ -14,11 +14,30 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import styles from "../styles/Contact.module.css";
-import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
 import ContactForm from "./components/ContactForm";
+import GithubTab from "./components/GithubTab";
+import LinkedInTab from "./components/LinkedInTab";
+import TwitterTab from "./components/TwitterTab";
 
-function contact() {
+const defaultEndpoint = "https://api.github.com/users/sord-dev";
+
+export async function getServerSideProps() {
+  const res = await fetch(defaultEndpoint);
+  const data = await res.json();
+  return {
+    props: {
+      data,
+    },
+  };
+}
+
+function contact({ data }) {
   return (
     <>
       <Head>
@@ -26,11 +45,11 @@ function contact() {
       </Head>
       <Box className={styles.main}>
         <Box className={styles.container}>
-          <Heading textAlign="center" as="h1" mb="5">
+          <Heading textAlign="center" as="h1" mb="2em">
             Get in touch
           </Heading>
 
-          <Tabs width='300px' height='500px' align='center' size="lg">
+          <Tabs width="300px" height="500px" align="center" size="lg">
             <TabList>
               <Tab>
                 <AiFillGithub scale={2} />
@@ -46,13 +65,12 @@ function contact() {
               </Tab>
             </TabList>
             <TabPanels textAlign="center">
-
               <TabPanel>
-              Github
+                <GithubTab data={data} />
               </TabPanel>
 
               <TabPanel>
-              LinkedIn
+                <LinkedInTab />
               </TabPanel>
 
               <TabPanel>
@@ -60,7 +78,7 @@ function contact() {
               </TabPanel>
 
               <TabPanel>
-                Twitter
+                <TwitterTab />
               </TabPanel>
 
             </TabPanels>
