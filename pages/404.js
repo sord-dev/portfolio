@@ -7,7 +7,7 @@ function NotFount() {
       <Heading textAlign='center'>
         Oops... Seems you&apos;ve stumbled beyond the universe.
       </Heading>
-      <Text textAlign='center' fontSize='2xl'>Head back to one of the tabs using the navbar</Text>
+      <Text textAlign='center' fontSize='2xl'>Head back to safety using the navbar</Text>
     </Box>
   );
 }
