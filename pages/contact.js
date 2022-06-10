@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import styles from "../styles/Contact.module.css";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
 import ContactForm from "./components/ContactForm";
 
@@ -30,7 +30,7 @@ function contact() {
             Get in touch
           </Heading>
 
-          <Tabs size="lg">
+          <Tabs width='300px' height='500px' align='center' size="lg">
             <TabList>
               <Tab>
                 <AiFillGithub scale={2} />
@@ -41,13 +41,28 @@ function contact() {
               <Tab>
                 <CgMail />
               </Tab>
+              <Tab>
+                <AiFillTwitterCircle scale={2} />
+              </Tab>
             </TabList>
             <TabPanels textAlign="center">
-              <TabPanel></TabPanel>
-              <TabPanel>2</TabPanel>
+
+              <TabPanel>
+              Github
+              </TabPanel>
+
+              <TabPanel>
+              LinkedIn
+              </TabPanel>
+
               <TabPanel>
                 <ContactForm />
               </TabPanel>
+
+              <TabPanel>
+                Twitter
+              </TabPanel>
+
             </TabPanels>
           </Tabs>
         </Box>

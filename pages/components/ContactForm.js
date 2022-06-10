@@ -36,10 +36,10 @@ function ContactForm() {
     <>
       <FormControl as='form' m={1} onSubmit={(e) => handleForm(e)}>
         <FormLabel htmlFor="name">Name</FormLabel>
-        <Input id="name" type="name" name='user_name'/>
+        <Input id="name" type="name" name='user_name' autoComplete="off" autoCapitalize="on"/>
 
         <FormLabel htmlFor="email">Email address</FormLabel>
-        <Input id="email" type="email"  name='user_email'/>
+        <Input id="email" type="email"  name='user_email' autoComplete="off"/>
 
         <FormLabel htmlFor="email">Message</FormLabel>
         <Textarea id="message" type="message" name='message' mb={5}/>
