@@ -44,7 +44,7 @@ function contact({ data }) {
             Get in touch
           </Heading>
 
-          <Tabs width="300px" height="500px" align="center" size="lg">
+          <Tabs width="300px" height="500px" align="center" size="lg" colorScheme='purple'>
             <TabList>
               <Tab>
                 <AiFillGithub scale={2} />
