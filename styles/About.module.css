@@ -10,9 +10,12 @@
 .main {
   min-height: 100vh;
   padding: 4rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.about_title{
+  position: absolute;
+  left: 5em;
+  top: 27em;
 }
 
 
@@ -29,4 +32,12 @@
   margin:  0;
   line-height: 1.5;
   font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

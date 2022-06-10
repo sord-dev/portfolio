@@ -1,6 +1,8 @@
 import {
   Box,
+  Button,
   Heading,
+  Spacer,
   Text,
 } from "@chakra-ui/react";
 import Head from "next/head";
@@ -20,17 +22,21 @@ function about() {
 
       <Box as="div" className={styles.main} mb={10}>
 
-        <Box maxW="50rem">
-          <Heading mb={4} size='2xl'>
-          <Box color='purple.500' as="span">Stefan Syrett</Box>, Web Developer
+        <Box  className={styles.about_title} maxW="60rem">
+          <Heading mb={4} size='3xl'>
+          Stefan <Box color='purple.500' opacity={.5} as="span">sord-dev</Box> Syrett
           </Heading>
-          <Text fontSize="xl">
+          <Spacer />
+          <Text fontSize={'xl'} p='1'>Web Developer / Software Developer / <Box color='purple.400' as="span">Nerd</Box></Text>
+          <Text fontSize="3xl" mb={1}>
           Hello, my name is Stefan and I love making things that live on the
             internet. I&apos;m a self taught web developer focused on front end
             work but has a passion and buring interest for the field as a whole.
           </Text>
+
+          <Button >CTA</Button>
         </Box>
-        
+
       </Box>
     </>
   );
