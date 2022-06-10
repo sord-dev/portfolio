@@ -1,4 +1,4 @@
-import { Box, Heading, Spacer, Text } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
 import styles from "../styles/About.module.css";

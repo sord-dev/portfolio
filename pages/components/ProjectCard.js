@@ -1,31 +1,58 @@
-import { Avatar, Box, Button, ButtonGroup, Link, Text } from "@chakra-ui/react";
+import {
+  Avatar,
+  Box,
+  Button,
+  ButtonGroup,
+  Divider,
+  Link,
+  List,
+  ListItem,
+  Text,
+  Tooltip,
+} from "@chakra-ui/react";
 import React from "react";
 import styles from "../../styles/Projects.module.css";
 
 function ProjectCard({ project }) {
-  console.log(project)
+  const date = new Date(project.created_at).toLocaleString().split(",")[0];
+
   return (
-        <Box className={styles.card}>
-
-        <Box display='flex' justifyContent='space-between' alignItems='center' p='.5'>
+    <Box className={styles.card}>
+      <Box
+        display="flex"
+        justifyContent="space-between"
+        alignItems="flex-start"
+        p=".5"
+      >
         <Text as="h2">{project.name}</Text>
-        <Link href={project.owner.html_url}> 
-          <Avatar src={project.owner.avatar_url}/>
+        <Link href={project.owner.html_url}>
+          <Avatar src={project.owner.avatar_url} />
         </Link>
-        </Box>
-          
-          <Text as="p" p={2}>
-            {project.description}
-          </Text>
+      </Box>
 
-          <Text as='p'>{project.language}</Text>
-          <Text as='p'>{`forks: ${project.forks_count} watchers: ${project.watchers} size: ${project.size > 1000 ? project.size / 1000 + 'Mb' : project.size + 'Kb'}`}</Text>
+      <Divider m={2} />
 
-          <ButtonGroup>
-            <Button className={styles.button} as='a' href={project.html_url}>Code</Button>
-          </ButtonGroup>
-        </Box>
-  
+      <List float="right" textAlign="right">
+        <ListItem>{`language: ${project.language}`}</ListItem>
+        <ListItem>{`created at: ${date}`}</ListItem>
+        <ListItem>{`watchers: ${project.watchers}`}</ListItem>
+        <ListItem>{`size: ${
+          project.size > 1000 ? project.size / 1000 + "Mb" : project.size + "Kb"
+        }`}</ListItem>
+      </List>
+
+      <Text as="p" textAlign="left" p={1}>
+        {project.description}
+      </Text>
+
+      <ButtonGroup width="100%" justifyContent="flex-end">
+        <Tooltip label={`learn more about this project`}>
+          <Button className={styles.button} as="a" href={project.html_url}>
+            Code
+          </Button>
+        </Tooltip>
+      </ButtonGroup>
+    </Box>
   );
 }
 
