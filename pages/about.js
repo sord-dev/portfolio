@@ -15,12 +15,14 @@ function about() {
         <title>Sord-dev&apos;s Portfolio - About</title>
       </Head>
 
-      <ParticleBackground className={styles.background} />
+      <ParticleBackground />
+
+
       <Box as="div" className={styles.main} mb={10}>
 
-        <Box maxW="32rem">
-          <Heading mb={4}>
-          About me
+        <Box maxW="50rem">
+          <Heading mb={4} size='2xl'>
+          <Box color='purple.500' as="span">Stefan Syrett</Box>, Web Developer
           </Heading>
           <Text fontSize="xl">
           Hello, my name is Stefan and I love making things that live on the
@@ -28,6 +30,7 @@ function about() {
             work but has a passion and buring interest for the field as a whole.
           </Text>
         </Box>
+        
       </Box>
     </>
   );
