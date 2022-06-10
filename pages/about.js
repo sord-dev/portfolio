@@ -1,7 +1,12 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+} from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
 import styles from "../styles/About.module.css";
+import ParticleBackground from "./components/ParticleBackground";
 
 function about() {
   return (
@@ -9,38 +14,18 @@ function about() {
       <Head>
         <title>Sord-dev&apos;s Portfolio - About</title>
       </Head>
-      <Box as="div" className={styles.main}>
-        <Box as="div" className={styles.container}>
-          <Heading>About me</Heading>
-          <Text as="p" mb={10}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
-            maxime eum earum beatae, iusto voluptatum similique rem magnam
-            quidem officiis facere ipsam quisquam ducimus et laborum modi
-            dolorem aliquid fugit!
-          </Text>
 
-          <Heading>Skills</Heading>
-          <Text as="p" mb={10}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
-            maxime eum earum beatae, iusto voluptatum similique rem magnam
-            quidem officiis facere ipsam quisquam ducimus et laborum modi
-            dolorem aliquid fugit!
-          </Text>
+      <ParticleBackground className={styles.background} />
+      <Box as="div" className={styles.main} mb={10}>
 
-          <Heading>Experience</Heading>
-          <Text as="p" mb={10}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
-            maxime eum earum beatae, iusto voluptatum similique rem magnam
-            quidem officiis facere ipsam quisquam ducimus et laborum modi
-            dolorem aliquid fugit!
-          </Text>
-
-          <Heading>Education</Heading>
-          <Text as="p" mb={10}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
-            maxime eum earum beatae, iusto voluptatum similique rem magnam
-            quidem officiis facere ipsam quisquam ducimus et laborum modi
-            dolorem aliquid fugit!
+        <Box maxW="32rem">
+          <Heading mb={4}>
+          About me
+          </Heading>
+          <Text fontSize="xl">
+          Hello, my name is Stefan and I love making things that live on the
+            internet. I&apos;m a self taught web developer focused on front end
+            work but for a passion and buring interest for the field as a whole.
           </Text>
         </Box>
       </Box>
