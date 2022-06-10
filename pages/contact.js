@@ -1,16 +1,11 @@
 import {
   Box,
-  FormControl,
-  FormHelperText,
-  FormLabel,
   Heading,
-  Input,
   Tab,
   TabList,
   TabPanel,
   TabPanels,
   Tabs,
-  Textarea,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import styles from "../styles/Contact.module.css";
@@ -80,7 +75,6 @@ function contact({ data }) {
               <TabPanel>
                 <TwitterTab />
               </TabPanel>
-
             </TabPanels>
           </Tabs>
         </Box>
