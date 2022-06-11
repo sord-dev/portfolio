@@ -1,6 +1,5 @@
 import { Box, Heading, Link, Text, Tooltip } from "@chakra-ui/react";
 import React from "react";
-import { IconContext } from "react-icons";
 import { AiFillLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
 
