@@ -6,14 +6,14 @@ import ParticleBackground from "./components/ParticleBackground";
 
 function about() {
   return (
-    <>
+    <Box className={styles.main}>
       <Head>
         <title>Sord-dev&apos;s Portfolio - About</title>
       </Head>
 
       <ParticleBackground />
 
-      <Box as="div" className={styles.main} mb={10}>
+      <Box as="div" className={styles.section} mb={10}>
         <Box className={styles.about_title} maxW="60rem">
           <Heading mb={4}  size="3xl">
             Stefan{" "}
@@ -35,12 +35,16 @@ function about() {
             work but has a passion and buring interest for the field as a whole.
           </Text>
 
-          <Button size="lg" fontSize={"lg"} m={1} p={'3 5'} bgColor="purple.500">
+          <Button as={'a'} href='#skills' size="lg" fontSize={"lg"} m={1} p={'3 5'} bgColor="purple.500">
             My Skills
           </Button>
         </Box>
       </Box>
-    </>
+
+      <Box as="div" className={styles.section} id='skills' mb={10}>
+        
+      </Box>
+    </Box>
   );
 }
 
