@@ -71,23 +71,23 @@ function about() {
               <DiGit />
             </CustomPopover>
 
-            <CustomPopover heading="React" desc="test123">
+            <CustomPopover heading="React" desc="React is a Javascript framework that aims to simplify the process of creating UIs using components.">
               <DiReact />
             </CustomPopover>
 
-            <CustomPopover heading="Firebase" desc="test123">
+            <CustomPopover heading="Firebase" desc="Firebase is a Google created SDK (Software Development Kit) that aids with Mobile and Web application development, It includes: authentication, databases, uploaded storage and more.">
               <SiFirebase />
             </CustomPopover>
 
-            <CustomPopover heading="Material UI" desc="test123">
+            <CustomPopover heading="Material UI" desc="Material UI is a component library that provides reausable and pre-styled components to be used in UI design.">
               <SiMaterialui />
             </CustomPopover>
 
-            <CustomPopover heading="Chakra UI" desc="test123">
+            <CustomPopover heading="Chakra UI" desc="Chakra UI, similar to Material UI is another component library that provides reausable and pre-styled components to be used in UI design.">
               <SiChakraui />
             </CustomPopover>
 
-            <CustomPopover heading="Framer Motion" desc="test123">
+            <CustomPopover heading="Framer Motion" desc="Framer Motion is an animation library that makes creating animations intuitive and easy.">
               <Text fontSize="2xl">framer-motion</Text>
             </CustomPopover>
           </IconContext.Provider>
