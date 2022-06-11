@@ -45,7 +45,7 @@ function Navbar() {
         </li>
 
         <li>
-          <IconButton onClick={toggleColorMode} icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon /> }></IconButton>
+          <IconButton zIndex='100' onClick={toggleColorMode} icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon /> }></IconButton>
         </li>
       </ul>
     </nav>

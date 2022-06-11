@@ -29,7 +29,7 @@ function about() {
           </Heading>
           <Spacer />
           <Text fontSize={"xl"} className={styles.subtitle} p="1">
-            Web Developer / Software Developer /{" "}
+            Web Developer /{" "}
             <Box color="purple.400" as="span">
               Nerd
             </Box>

@@ -2,7 +2,7 @@
 
 *Sord-dev's portfolio*
 
-This is still a work in progress at the moment
+My web development portfolio, feel free to look at tech I used c:
 
 ## Architecture
 These are the technologies I used to create this portfolio.
