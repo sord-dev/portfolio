@@ -16,13 +16,9 @@ These are the technologies I used to create this portfolio.
 
 ## Features
 
- - Adds all profit and expenses to give an overall revenue
- - Displays expenses
- - Displays income
- 
-**Potential Future Features**
- - Storage of expenses 
- - Sorting by date
+ - Live Project Updates via Github API
+ - Interactive Particles
+ - Light and Dark Mode
 
 ## Lessons Learned
 ???
