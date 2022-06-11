@@ -13,19 +13,17 @@ These are the technologies I used to create this portfolio.
  - ChakraUI
  - Framer Motion
  - TS Particles
+ - NextJS
 
 ## Features
 
- - Adds all profit and expenses to give an overall revenue
- - Displays expenses
- - Displays income
- 
-**Potential Future Features**
- - Storage of expenses 
- - Sorting by date
+ - Live Project Updates via Github API
+ - Interactive Particles
+ - Light and Dark Mode
 
 ## Lessons Learned
-???
+
+This project taught me how streamlined the development process can be using create-next-app in leiu of create-react-app, not only was the routing solution very efficient and easy to work with but the deployment time of a dev server is practically a fraction of it's counterpart.
 
 
 ## Cloning this repo
