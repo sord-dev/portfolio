@@ -1,10 +1,4 @@
-import {
-  Box,
-  Button,
-  Heading,
-  Spacer,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Heading, Spacer, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
 import styles from "../styles/About.module.css";
@@ -19,24 +13,32 @@ function about() {
 
       <ParticleBackground />
 
-
       <Box as="div" className={styles.main} mb={10}>
-
-        <Box  className={styles.about_title} maxW="60rem">
-          <Heading mb={4} size='3xl'>
-          Stefan <Box color='purple.500' opacity={.5} as="span">sord-dev</Box> Syrett
+        <Box className={styles.about_title} maxW="60rem">
+          <Heading mb={4}  size="3xl">
+            Stefan{" "}
+            <Box color="purple.500" opacity={0.5} as="span">
+              sord-dev
+            </Box>{" "}
+            Syrett
           </Heading>
           <Spacer />
-          <Text fontSize={'xl'} p='1'>Web Developer / Software Developer / <Box color='purple.400' as="span">Nerd</Box></Text>
-          <Text fontSize="3xl" mb={1}>
-          Hello, my name is Stefan and I love making things that live on the
+          <Text fontSize={"xl"} className={styles.subtitle} p="1">
+            Web Developer / Software Developer /{" "}
+            <Box color="purple.400" as="span">
+              Nerd
+            </Box>
+          </Text>
+          <Text  fontSize="3xl" mb={1}>
+            Hello, my name is Stefan and I love making things that live on the
             internet. I&apos;m a self taught web developer focused on front end
             work but has a passion and buring interest for the field as a whole.
           </Text>
 
-          <Button >CTA</Button>
+          <Button size="lg" fontSize={"lg"} m={1} p={'3 5'} bgColor="purple.500">
+            My Skills
+          </Button>
         </Box>
-
       </Box>
     </>
   );

@@ -35,9 +35,11 @@
 }
 
 @media (max-width: 600px) {
-  .main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+  .about_title{
+    position: unset;
+  }
+  .about_title .subtitle{
+    font-size: 1.2em;
   }
 }

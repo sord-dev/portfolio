@@ -1,32 +1,49 @@
-## Getting Started
+# Portfolio
 
-First, run the development server:
+*Sord-dev's portfolio*
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This is still a work in progress at the moment
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Architecture
+These are the technologies I used to create this portfolio.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+ - React
+ - ThreeJS
+ - EmailJS
+ - ChakraUI
+ - Framer Motion
+ - TS Particles
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+ - Adds all profit and expenses to give an overall revenue
+ - Displays expenses
+ - Displays income
+ 
+**Potential Future Features**
+ - Storage of expenses 
+ - Sorting by date
 
-## Learn More
+## Lessons Learned
+???
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Cloning this repo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1.  To get the sample code from GitHub, use the  `git clone`  command to get a local copy of the remote repository. To clone the sample code, run the following command:
+    
+    ```bash
+    $ git clone [newlink]
+    ```
 
-## Deploy on Vercel
+    
+2.  Install dependencies
+    ``` bash 
+    $ cd portfolio
+    $ npm i
+	```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3.  Launch the developer server
+    ``` bash 
+    $ npm run dev
+	```
