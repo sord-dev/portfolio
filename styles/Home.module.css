@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.main:last-child{
+.main:last-child {
   margin-top: 1em;
 }
 
@@ -42,8 +42,7 @@
   font-size: 1.5rem;
 }
 
-
-.canvas canvas{
+.canvas canvas {
   height: 450px;
   width: 450px;
 }
