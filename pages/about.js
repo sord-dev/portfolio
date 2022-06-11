@@ -54,10 +54,15 @@ function about() {
         </Box>
       </Box>
 
-      <Box as="div" className={styles.section} id="skills" mb={10}>
-        <Box>
-          <IconContext.Provider className={styles.grid} value={{ size: 70 }}>
-          
+      <Box as="div" className={styles.section} position='relative' display='flex' alignItems='center' justifyContent='center' id="skills" mb={10}>
+
+      <Heading position='absolute' top='15px' left='15px'>
+        Skills
+      </Heading>
+      <Box className={styles.grid}>
+
+      
+          <IconContext.Provider  value={{ size: 70 }}>
             <CustomPopover heading="Javascript" desc="test123">
               <IoLogoJavascript />
             </CustomPopover>
@@ -82,11 +87,11 @@ function about() {
               <SiChakraui />
             </CustomPopover>
 
-            <CustomPopover heading="Chakra UI" desc="test123">
-              <Text fontSize="2xl">Framer-motion</Text>
+            <CustomPopover heading="Framer Motion" desc="test123">
+              <Text fontSize="2xl">framer-motion</Text>
             </CustomPopover>
           </IconContext.Provider>
-        </Box>
+          </Box>
       </Box>
     </Box>
   );
