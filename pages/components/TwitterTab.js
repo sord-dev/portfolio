@@ -4,9 +4,14 @@ import { Timeline } from "react-twitter-widgets";
 
 function TwitterTab() {
   return (
-    <Box p={5} width='100%'>
+    <Box p={5} width="100%">
       <Heading mb={5} size={"md"}>
-        Check me out on <Tooltip label='to twitter'><Link color='purple.300' href='https://twitter.com/sord_dev'>twitter</Link></Tooltip>
+        Check me out on{" "}
+        <Tooltip label="to twitter">
+          <Link color="purple.300" href="https://twitter.com/sord_dev">
+            twitter
+          </Link>
+        </Tooltip>
       </Heading>
 
       <Timeline
@@ -17,7 +22,7 @@ function TwitterTab() {
         options={{
           height: "450",
           width: "450",
-          theme: "dark"
+          theme: "dark",
         }}
       />
     </Box>

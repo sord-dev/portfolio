@@ -7,7 +7,9 @@ function LinkedInTab() {
   return (
     <Box p={5}>
       <Box mb={5} textAlign="center">
-        <Heading size={"md"} pb='5'>Check out my LinkedIn</Heading>
+        <Heading size={"md"} pb="5">
+          Check out my LinkedIn
+        </Heading>
 
         <Tooltip label="To LinkedIn">
           <Link
@@ -18,8 +20,8 @@ function LinkedInTab() {
             }}
             href="https://www.linkedin.com/in/stefan-syrett-558380223/"
             display="flex"
-            flexDirection='column'
-            alignItems='center'
+            flexDirection="column"
+            alignItems="center"
             justifyContent="center"
           >
             <AiFillLinkedin size={70} />

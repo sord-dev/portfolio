@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Link, Spacer, Text } from "@chakra-ui/react";
+import { Box, Button, Heading, Spacer, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
 import styles from "../styles/About.module.css";
@@ -54,44 +54,71 @@ function about() {
         </Box>
       </Box>
 
-      <Box as="div" className={styles.section} position='relative' display='flex' alignItems='center' justifyContent='center' id="skills" mb={10}>
-
-      <Heading position='absolute' top='15px' left='15px'>
-        Skills
-      </Heading>
-      <Box className={styles.grid}>
-
-      
-          <IconContext.Provider  value={{ size: 70 }}>
-            <CustomPopover heading="Javascript" desc="Javascript is the main functionality language of the internet, and with the advent of NodeJS, has moved server side too.">
+      <Box
+        as="div"
+        className={styles.section}
+        position="relative"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        id="skills"
+        mb={10}
+      >
+        <Heading position="absolute" top="15px" left="15px">
+          Skills
+        </Heading>
+        <Box className={styles.grid}>
+          <IconContext.Provider value={{ size: 70 }}>
+            <CustomPopover
+              heading="Javascript"
+              desc="Javascript is the main functionality language of the internet, and with the advent of NodeJS, has moved server side too."
+            >
               <IoLogoJavascript />
             </CustomPopover>
 
-            <CustomPopover heading="Git" desc="Git is a version control system that makes collaborative projects easy to maintain and expand on.">
+            <CustomPopover
+              heading="Git"
+              desc="Git is a version control system that makes collaborative projects easy to maintain and expand on."
+            >
               <DiGit />
             </CustomPopover>
 
-            <CustomPopover heading="React" desc="React is a Javascript framework that aims to simplify the process of creating UIs using components.">
+            <CustomPopover
+              heading="React"
+              desc="React is a Javascript framework that aims to simplify the process of creating UIs using components."
+            >
               <DiReact />
             </CustomPopover>
 
-            <CustomPopover heading="Firebase" desc="Firebase is a Google created SDK (Software Development Kit) that aids with Mobile and Web application development, It includes: authentication, databases, uploaded storage and more.">
+            <CustomPopover
+              heading="Firebase"
+              desc="Firebase is a Google created SDK (Software Development Kit) that aids with Mobile and Web application development, It includes: authentication, databases, uploaded storage and more."
+            >
               <SiFirebase />
             </CustomPopover>
 
-            <CustomPopover heading="Material UI" desc="Material UI is a component library that provides reausable and pre-styled components to be used in UI design.">
+            <CustomPopover
+              heading="Material UI"
+              desc="Material UI is a component library that provides reausable and pre-styled components to be used in UI design."
+            >
               <SiMaterialui />
             </CustomPopover>
 
-            <CustomPopover heading="Chakra UI" desc="Chakra UI, similar to Material UI is another component library that provides reausable and pre-styled components to be used in UI design.">
+            <CustomPopover
+              heading="Chakra UI"
+              desc="Chakra UI, similar to Material UI is another component library that provides reausable and pre-styled components to be used in UI design."
+            >
               <SiChakraui />
             </CustomPopover>
 
-            <CustomPopover heading="Framer Motion" desc="Framer Motion is an animation library that makes creating animations intuitive and easy.">
+            <CustomPopover
+              heading="Framer Motion"
+              desc="Framer Motion is an animation library that makes creating animations intuitive and easy."
+            >
               <Text fontSize="2xl">framer-motion</Text>
             </CustomPopover>
           </IconContext.Provider>
-          </Box>
+        </Box>
       </Box>
     </Box>
   );

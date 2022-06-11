@@ -43,13 +43,11 @@ export default function Home() {
         </Text>
 
         <Canvas className={styles.canvas}>
-          <OrbitControls enableZoom={false}/>
+          <OrbitControls enableZoom={false} />
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} intensity={2} />
           <AnimatedSphere />
         </Canvas>
-
-
       </Box>
     </div>
   );

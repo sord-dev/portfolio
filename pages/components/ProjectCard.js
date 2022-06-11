@@ -24,7 +24,7 @@ function ProjectCard({ project }) {
         className={styles.card}
         whileHover={{
           scale: 1.1,
-          transition: { duration: .2 },
+          transition: { duration: 0.2 },
         }}
       >
         <Box

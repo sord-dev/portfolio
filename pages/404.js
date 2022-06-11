@@ -5,7 +5,7 @@ import ParticleBackground from "./components/ParticleBackground";
 function NotFount() {
   return (
     <>
-    <ParticleBackground />
+      <ParticleBackground />
       <Box
         display="flex"
         height="100vh"
