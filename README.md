@@ -13,6 +13,7 @@ These are the technologies I used to create this portfolio.
  - ChakraUI
  - Framer Motion
  - TS Particles
+ - NextJS
 
 ## Features
 
@@ -21,7 +22,8 @@ These are the technologies I used to create this portfolio.
  - Light and Dark Mode
 
 ## Lessons Learned
-???
+
+This project taught me how streamlined the development process can be using create-next-app in leiu of create-react-app, not only was the routing solution very efficient and easy to work with but the deployment time of a dev server is practically a fraction of it's counterpart.
 
 
 ## Cloning this repo
