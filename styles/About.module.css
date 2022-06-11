@@ -2,7 +2,7 @@
   padding: 0 2rem;
 }
 
-.containersm{
+.containersm {
   padding: 0 2rem;
   width: 650px;
 }
@@ -12,12 +12,11 @@
   padding: 4rem 2rem;
 }
 
-.about_title{
+.about_title {
   position: absolute;
   left: 5em;
   top: 27em;
 }
-
 
 .title {
   margin: 0;
@@ -27,20 +26,27 @@
   padding: 0;
 }
 
-
 .description {
-  margin:  0;
+  margin: 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }
 
-@media (max-width: 600px) {
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4em;
+  max-width: 800px;
+}
 
-  .about_title{
+@media (max-width: 600px) {
+  .about_title {
     position: unset;
   }
-  
-  .about_title .subtitle{
+
+  .about_title .subtitle {
     font-size: 1.2em;
   }
 }

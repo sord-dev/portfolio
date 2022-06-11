@@ -52,9 +52,9 @@ function ContactForm() {
   };
   return (
     <>
-    <Heading size={'md'} mt={1}>
-      Email? No problem!
-    </Heading>
+      <Heading size={"md"} mt={1}>
+        Email? No problem!
+      </Heading>
 
       <FormControl as="form" m={1} onSubmit={(e) => handleForm(e)}>
         <FormLabel htmlFor="name">Name</FormLabel>

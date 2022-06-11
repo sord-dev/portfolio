@@ -41,16 +41,6 @@ a {
   margin-left: 20px;
 }
 
-.btt {
-  display: none;
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-
-  width: 90px;
-  height: 90px;
-  border-radius: 15%;
-}
 
 .footer {
   position: absolute;
@@ -76,9 +66,5 @@ a {
     bottom: 10px;
     right: 10px;
     opacity: 0.6;
-  }
-
-  .btt {
-    display: block;
   }
 }

@@ -19,7 +19,7 @@ function GithubTab({ data }) {
         Check me out on github
       </Heading>
 
-      <Tooltip label='To Github'>
+      <Tooltip label="To Github">
         <Link href={data.html_url}>
           <Avatar src={data.avatar_url} size="lg" mb={5} />
           <Text>{`@${data.login}`}</Text>
