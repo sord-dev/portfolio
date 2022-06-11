@@ -63,11 +63,11 @@ function about() {
 
       
           <IconContext.Provider  value={{ size: 70 }}>
-            <CustomPopover heading="Javascript" desc="test123">
+            <CustomPopover heading="Javascript" desc="Javascript is the main functionality language of the internet, and with the advent of NodeJS, has moved server side too.">
               <IoLogoJavascript />
             </CustomPopover>
 
-            <CustomPopover heading="Git" desc="test123">
+            <CustomPopover heading="Git" desc="Git is a version control system that makes collaborative projects easy to maintain and expand on.">
               <DiGit />
             </CustomPopover>
 
