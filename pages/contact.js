@@ -15,10 +15,10 @@ import {
   AiFillTwitterCircle,
 } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
-import ContactForm from "./components/ContactForm";
-import GithubTab from "./components/GithubTab";
-import LinkedInTab from "./components/LinkedInTab";
-import TwitterTab from "./components/TwitterTab";
+import ContactForm from "../components/ContactForm";
+import GithubTab from "../components/GithubTab";
+import LinkedInTab from "../components/LinkedInTab";
+import TwitterTab from "../components/TwitterTab";
 
 const defaultEndpoint = "https://api.github.com/users/sord-dev";
 
