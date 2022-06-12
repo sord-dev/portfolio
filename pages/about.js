@@ -71,7 +71,7 @@ function about() {
           <IconContext.Provider value={{ size: 70 }}>
             <CustomPopover
               heading="Javascript"
-              desc="Javascript is the main functionality language of the internet, and with the advent of NodeJS, has moved server side too."
+              desc="Javascript is the main functionality language of the browser, and with the advent of NodeJS, has moved server side too."
             >
               <IoLogoJavascript />
             </CustomPopover>

@@ -13,7 +13,7 @@ export default function Home() {
         <title>Sord-dev&apos;s Portfolio</title>
         <meta
           name="description"
-          content="Portfolio of sord-dev, otherwise known as Stefan"
+          content="Stefan's web development portfolio"
         />
       </Head>
 
