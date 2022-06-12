@@ -1,6 +1,6 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-import ParticleBackground from "./components/ParticleBackground";
+import ParticleBackground from "../components/ParticleBackground";
 
 function NotFount() {
   return (

@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import AnimatedSphere from "./components/AnimatedSphere";
+import AnimatedSphere from "../components/AnimatedSphere";
 
 export default function Home() {
   return (

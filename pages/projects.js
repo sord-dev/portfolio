@@ -1,8 +1,9 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
+import ProjectCard from "../components/ProjectCard";
 import styles from "../styles/Projects.module.css";
-import ProjectCard from "./components/ProjectCard";
+
 
 const defaultEndpoint = "https://api.github.com/users/sord-dev/repos";
 

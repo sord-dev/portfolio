@@ -2,12 +2,12 @@ import { Box, Button, Heading, Spacer, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
 import styles from "../styles/About.module.css";
-import ParticleBackground from "./components/ParticleBackground";
+import ParticleBackground from "../components/ParticleBackground";
 import { IoLogoJavascript } from "react-icons/io";
 import { DiGit, DiReact } from "react-icons/di";
 import { SiMaterialui, SiFirebase, SiChakraui } from "react-icons/si";
 import { IconContext } from "react-icons";
-import CustomPopover from "./components/Popover";
+import CustomPopover from "../components/Popover";
 
 function about() {
   return (
