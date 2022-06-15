@@ -7,8 +7,6 @@ const ParticleBackground = () => {
     await loadFull(main);
   };
 
-
-
   return (
     <div>
       <Particles
