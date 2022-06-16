@@ -34,6 +34,7 @@ function about() {
               Nerd
             </Box>
           </Text>
+          
           <Text fontSize="3xl" mb={1}>
             Hello, my name is Stefan and I love making things that live on the
             internet. I&apos;m a self taught web developer focused on front end
@@ -43,11 +44,9 @@ function about() {
             
           </Text>
 
-          <Text fontSize="3xl" mb='2'>
-          Having experience as a wordpress developer, I was able to grow my skills vastly towards the direction of React and Next.js, learning and understanding how everything works and is put togther is just enjoyable to me!
+          <Text fontSize="3xl" mb={1}>
+          Having experience as a wordpress developer, I was able to grow my skills vastly towards the direction of React and Next.js, learning and understanding how everything works and is put togther is simply enjoyable to me!
           </Text>
-
-
 
           <Button
             as={"a"}
