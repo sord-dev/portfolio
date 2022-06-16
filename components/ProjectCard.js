@@ -15,6 +15,7 @@ import styles from "../styles/Projects.module.css";
 import { motion } from "framer-motion";
 
 function ProjectCard({ project }) {
+  console.log(project)
   const date = new Date(project.created_at).toLocaleString().split(",")[0];
 
   return (
@@ -62,6 +63,13 @@ function ProjectCard({ project }) {
               Code
             </Button>
           </Tooltip>
+          {project.homepage && (
+            <Tooltip label={`live hosted project`}>
+            <Button className={styles.button} as="a" href={`https://${project.homepage}`}>
+              Live Site
+            </Button>
+          </Tooltip>
+          )}
         </ButtonGroup>
       </Box>
     </>
