@@ -43,7 +43,7 @@
 
 @media (max-width: 600px) {
   .about_title {
-    position: unset;
+    text-align: center;
   }
 
   .about_title .subtitle {
