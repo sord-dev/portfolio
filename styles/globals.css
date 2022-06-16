@@ -34,11 +34,22 @@ a {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  gap: 1.175em;
+  align-items: flex-end;
+  gap: 1.75em;
+}
+
+.nav ul li {
+  transform: scale(1.175);
 }
 
 .nav ul li:last-child {
   margin-left: 20px;
+}
+
+.btt{
+  position: fixed;
+  bottom: 15px;
+  left: 49%;
 }
 
 
