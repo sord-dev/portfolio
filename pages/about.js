@@ -43,7 +43,7 @@ function about() {
             
           </Text>
 
-          <Text fontSize="3xl" m={'0 2'}>
+          <Text fontSize="3xl" mb='2'>
           Having experience as a wordpress developer, I was able to grow my skills vastly towards the direction of React and Next.js, learning and understanding how everything works and is put togther is just enjoyable to me!
           </Text>
 
