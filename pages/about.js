@@ -34,10 +34,15 @@ function about() {
               Nerd
             </Box>
           </Text>
+          
           <Text fontSize="3xl" mb={1}>
             Hello, my name is Stefan and I love making things that live on the
             internet. I&apos;m a self taught web developer focused on front end
             work but has a passion and buring interest for the field as a whole.
+          </Text>
+
+          <Text fontSize="3xl" mb={1}>
+          Having experience as a wordpress developer, I was able to grow my skills vastly towards the direction of React and Next.js, learning and understanding how everything works and is put togther is simply enjoyable to me!
           </Text>
 
           <Button

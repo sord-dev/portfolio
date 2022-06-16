@@ -19,20 +19,21 @@ function Layout({ children }) {
 
   const scrollToTop = () => {
     window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // for smoothly scrolling
+      top: 0
     });
   };
 
   return (
     <>
       <Navbar />
-      
-      <main>
-      {children}
-      </main>
+
+      <main>{children}</main>
       <Footer />
-      {showButton && (<Button color='purple.400' onClick={scrollToTop} className='btt'><ArrowUpIcon /></Button>)}
+      {showButton && (
+        <Button color="purple.400" onClick={scrollToTop} className="btt">
+          <ArrowUpIcon />
+        </Button>
+      )}
     </>
   );
 }

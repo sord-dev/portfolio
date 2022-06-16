@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <nav className="nav">
       <ul>
-        <IconContext.Provider value={{size: 17.5}}>
+        <IconContext.Provider value={{ size: 17.5 }}>
           <li>
             <Tooltip label="Home">
               <Link href="/">

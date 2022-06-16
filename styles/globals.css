@@ -46,12 +46,11 @@ a {
   margin-left: 20px;
 }
 
-.btt{
+.btt {
   position: fixed;
   bottom: 15px;
   left: 49%;
 }
-
 
 .footer {
   position: absolute;
