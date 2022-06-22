@@ -15,8 +15,11 @@ import styles from "../styles/Projects.module.css";
 import { motion } from "framer-motion";
 
 function ProjectCard({ project }) {
-  console.log(project)
   const date = new Date(project.created_at).toLocaleString().split(",")[0];
+
+  const regex = /http/g
+  const url = project.homepage
+  
 
   return (
     <>
@@ -65,7 +68,7 @@ function ProjectCard({ project }) {
           </Tooltip>
           {project.homepage && (
             <Tooltip label={`live hosted project`}>
-            <Button className={styles.button} as="a" href={`https://${project.homepage}`}>
+            <Button className={styles.button} as="a" href={regex.test(url) ? url : `https://${url}`}>
               Live Site
             </Button>
           </Tooltip>
